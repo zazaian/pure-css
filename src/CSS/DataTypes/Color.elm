@@ -2,7 +2,8 @@ module CSS.DataTypes.Color exposing (..)
 
 type Color =
     BasicColorKeyword
-    | 
+    | RGB RGBTuple
+    | RGBA RGBATuple
 
 
 type BasicColorKeword =
@@ -23,3 +24,14 @@ type BasicColorKeword =
      | Teal
      | Aqua
 
+
+type RGBValue =
+    number Maybe Pct
+
+
+type alias RGBTuple =
+    ( RGBValue, RGBValue, RGBValue )
+
+
+type alias RGBATuple =
+    ( RGBValue, RGBValue, RGBValue, RGBValue )
