@@ -1,7 +1,6 @@
 module Properties.Position exposing (..)
 
 
-
 type Position =
   Static
   | Absolute

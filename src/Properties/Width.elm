@@ -1,14 +1,14 @@
 module Properties.Width exposing (..)
 
-import LengthUnits
-import LengthUnits exposing (Units)
+import Size
+import Size exposing (Units)
 
 
 
-width : Int -> LengthUnits.Units -> String
+width : Int -> Size.Units -> String
 width number unit =
     let
-      unitVal = LengthUnits.toString unit
+      unitVal = Size.toString unit
 
     in
         "width: " ++ (toString number) ++ unitVal ++ ";"

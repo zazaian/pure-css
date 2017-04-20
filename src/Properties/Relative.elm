@@ -1,11 +1,11 @@
 module Properties.Relative exposing (..)
 
-import LengthUnits
+import Size
 
 
 type Relative =
   Auto
-  | Length Int LengthUnits.Units
+  | Length Int Size.Units
   | Initial
   | Inherit
 
@@ -18,7 +18,7 @@ top value =
             Auto ->
                 "auto"
             Length len unit ->
-                (toString len) ++ LengthUnits.toString unit
+                (toString len) ++ Size.toString unit
             Initial ->
                 "initial"
             Inherit ->
@@ -35,7 +35,7 @@ bottom value =
             Auto ->
                 "auto"
             Length len unit ->
-                (toString len) ++ LengthUnits.toString unit
+                (toString len) ++ Size.toString unit
             Initial ->
                 "initial"
             Inherit ->
@@ -51,7 +51,7 @@ left value =
             Auto ->
                 "auto"
             Length len unit ->
-                (toString len) ++ LengthUnits.toString unit
+                (toString len) ++ Size.toString unit
             Initial ->
                 "initial"
             Inherit ->
@@ -66,7 +66,7 @@ right value =
             Auto ->
                 "auto"
             Length len unit ->
-                (toString len) ++ LengthUnits.toString unit
+                (toString len) ++ Size.toString unit
             Initial ->
                 "initial"
             Inherit ->
