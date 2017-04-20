@@ -14,11 +14,11 @@ type Keywords =
 type alias URL =
     String
 
-type alias Modifier =
+type alias URLModifier =
     String
 
 type ResourceLocator =
    AbsoluteURL URL
    | RelativeURL URL
    | EmptyURL
-   | ModifiedURL URL Modifier
+   | ModifiedURL URL URLModifier
