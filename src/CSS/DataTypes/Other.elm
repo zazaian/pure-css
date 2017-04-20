@@ -8,7 +8,7 @@ type AngleUnit =
 
 
 type Angle =
-    number AngleUnit
+    number Maybe AngleUnit
 
 
 type TimeUnit =
@@ -17,4 +17,23 @@ type TimeUnit =
 
 
 type Time =
-    number TimeUnit
+    number Maybe TimeUnit
+
+
+type FrequencyUnit =
+    Hz
+    | Khz
+
+
+type Frequency =
+    number Maybe FrequencyUnit
+
+
+type ResolutionUnit =
+    Dpi
+    | Dpcm
+    | Dppx
+
+
+type Resolution =
+    number Maybe ResolutionUnit
