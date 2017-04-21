@@ -5,20 +5,38 @@ Consult URL definition at:
 https://www.w3.org/TR/css3-values/#urls
 -}
 
+-- CSS-Wide Keywords
 
-type Keywords =
+type CSSKeyword =
    Initial
    | Inherit
    | Unset
 
-type alias URL =
+
+type alias URLPath =
     String
+
 
 type alias URLModifier =
     String
+
+
+type URLType =
+    Absolute
+    | Relative
+    | Empty
+    | Modified
+
+
+type alias URL =
+    URL Maybe URLPath Maybe URLModifier Maybe URLType
+
+{-
 
 type ResourceLocator =
    AbsoluteURL URL
    | RelativeURL URL
    | EmptyURL
    | ModifiedURL URL URLModifier
+
+-}

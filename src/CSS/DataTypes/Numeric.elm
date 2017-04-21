@@ -1,9 +1,20 @@
 module CSS.DataTypes.Numeric exposing (..)
 
 type Numeric =
+   number Maybe Pct
+
+
+type Dimension =
+    number Unit
+
+
+{-
+
+type Numeric =
     Integer Int
     | Number number
     | Percentage
+
 
 type Percentage =
     LengthPct number
@@ -12,10 +23,7 @@ type Percentage =
     | TimePct number
     | NumberPct number
 
-type Dimension =
-    number Unit
-
-{-
 Need to look up compatible and canonical units:
 4.5. Compatible Units
+
 -}
