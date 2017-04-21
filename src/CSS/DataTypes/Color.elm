@@ -1,5 +1,7 @@
 module CSS.DataTypes.Color exposing (..)
 
+import CSS.DataTypes.Numeric exposing (Numeric)
+
 type Color =
     BasicColorKeyword
     | RGB RGBTuple
@@ -25,13 +27,17 @@ type BasicColorKeword =
      | Aqua
 
 
-type RGBValue =
-    number Maybe Pct
+type RGBTuple =
+    RGB ( Numeric, Numeric, Numeric )
 
 
-type alias RGBTuple =
-    ( RGBValue, RGBValue, RGBValue )
+type RGBATuple =
+    RGBA ( Numeric, Numeric, Numeric, Numeric )
 
 
-type alias RGBATuple =
-    ( RGBValue, RGBValue, RGBValue, RGBValue )
+type HSLTuple =
+    HSL ( Numeric, Numeric, Numeric )
+
+
+type HSLATuple =
+    HSLA ( Numeric, Numeric, Numeric, Numeric )
