@@ -1,4 +1,4 @@
-module CSS.DataTypes.Image exposing (..)
+module PureCSS.CSS3.DataTypes.Image exposing (..)
 
 {-
 Defined by the spec at:

@@ -1,4 +1,4 @@
-module CSS.DataTypes.Other exposing (..)
+module PureCSS.CSS3.DataTypes.Other exposing (..)
 
 type AngleUnit =
     Deg

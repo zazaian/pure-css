@@ -1,4 +1,4 @@
-module CSS.DataTypes.Numeric exposing (..)
+module PureCSS.CSS3.DataTypes.Numeric exposing (..)
 
 type Numeric =
    number Maybe Pct

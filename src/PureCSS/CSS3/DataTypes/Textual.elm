@@ -1,4 +1,4 @@
-module CSS.DataTypes.Textual exposing (..)
+module PureCSS.CSS3.DataTypes.Textual exposing (..)
 
 {-
 Consult URL definition at:

@@ -1,4 +1,4 @@
-module CSS.DataTypes.Position exposing (..)
+module PureCSS.CSS3.DataTypes.Position exposing (..)
 
 {-
 
