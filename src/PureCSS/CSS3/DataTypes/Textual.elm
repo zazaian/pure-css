@@ -30,13 +30,3 @@ type URLType =
 
 type alias URL =
     URL Maybe URLPath Maybe URLModifier Maybe URLType
-
-{-
-
-type ResourceLocator =
-   AbsoluteURL URL
-   | RelativeURL URL
-   | EmptyURL
-   | ModifiedURL URL URLModifier
-
--}
