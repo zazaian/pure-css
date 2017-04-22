@@ -2,6 +2,11 @@ module PureCSS.Stylesheet exposing (..)
 
 
 stylesheet : Elements -> Namespace -> Mixins -> Stylesheet
+stylesheet elements namespace mixins =
+    { elements = elements
+    , namespace = namespace
+    , mixins = mixins
+    }
 
 
 type Elements =
@@ -19,5 +24,5 @@ type Mixins =
 type alias Stylesheet =
     { elements = Elements
     , namespace = Namespace
-    , mixins = Mixin
+    , mixins = Mixins
     }
