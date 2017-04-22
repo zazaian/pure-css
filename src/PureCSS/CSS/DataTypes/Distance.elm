@@ -1,4 +1,4 @@
-module PureCSS.CSS3.DataTypes.Distance exposing (..)
+module PureCSS.CSS.DataTypes.Distance exposing (..)
 
 
 type FontRelativeUnit =

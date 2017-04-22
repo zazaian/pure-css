@@ -1,6 +1,6 @@
-module PureCSS.CSS3.DataTypes.Color exposing (..)
+module PureCSS.CSS.DataTypes.Color exposing (..)
 
-import PureCSS.CSS3.DataTypes.Numeric exposing (Numeric)
+import PureCSS.CSS.DataTypes.Numeric exposing (Numeric)
 
 type Color =
     ColorKeyword
