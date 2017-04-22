@@ -1,6 +1,12 @@
 module PureCSS.CSS.DataTypes.Distance exposing (..)
 
 
+
+type LengthUnit =
+    AbsoluteUnit
+    | RelativeUnit
+
+
 type FontRelativeUnit =
     Em
     | Ex

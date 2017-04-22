@@ -7,6 +7,20 @@ https://www.w3.org/TR/css3-values/#urls
 
 -- CSS-Wide Keywords
 
+
+cssKeywordToString : CSSKeyword -> String
+cssKeywordToString cssKeyword =
+    case cssKeyword of
+        Initial ->
+            "initial"
+
+        Inherit ->
+            "inherit"
+
+        Unset ->
+            "unset"
+
+
 type CSSKeyword =
    Initial
    | Inherit
