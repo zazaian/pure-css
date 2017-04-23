@@ -2,44 +2,35 @@ module PureCSS.CSS.DataTypes.Distance exposing (..)
 
 
 
-type LengthUnit =
-    AbsoluteUnit
-    | RelativeUnit
+type LengthUnit number =
+    PhysicalUnit number
+    | VisualAngleUnit number
+    | FontRelativeUnit number
+    | ViewportPctUnit number
 
 
-type FontRelativeUnit =
-    Em
-    | Ex
-    | Ch
-    | Rem
-    | Vw
+type FontRelativeUnit number =
+    Em number
+    | Ex number
+    | Ch number
+    | Rem number
 
 
-type ViewportPctUnit =
-    Vw
-    | Vh
-    | Vmin
-    | Vmax
+type ViewportPctUnit number =
+    Vw number
+    | Vh number
+    | Vmin number
+    | Vmax number
 
 
-type RelativeUnit =
-    FontRelativeUnit
-    | ViewportPctUnit
+type PhysicalUnit number =
+    Cm number
+    | Mm number
+    | Q number
+    | In number
+    | Pc number
+    | Pt number
 
 
-type PhysicalUnit =
-    Cm
-    | Mm
-    | Q
-    | In
-    | Pc
-    | Pt
-
-
-type alias VisualAngleUnit =
-    Px
-
-
-type AbsoluteUnit =
-    PhysicalUnit
-    | VisualAngleUnit
+type VisualAngleUnit number =
+    Px number

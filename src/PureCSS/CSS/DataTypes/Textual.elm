@@ -30,4 +30,4 @@ type URLType =
 
 
 type alias URL =
-    URL Maybe URLPath Maybe URLModifier Maybe URLType
+    Maybe URLPath Maybe URLModifier Maybe URLType

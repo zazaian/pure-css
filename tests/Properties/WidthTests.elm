@@ -3,21 +3,24 @@ module Properties.WidthTests exposing (..)
 import Test exposing (..)
 import Expect
 import PureCSS.CSS.Properties.Width exposing (..)
+import PureCSS.CSS.DataTypes.Distance exposing (LengthUnit)
+import PureCSS.CSS.DataTypes.Textual exposing (CSSKeyword)
+
 
 all : Test
 all =
     describe "width properties"
-        [ test "absolute position" <|
+        [ test "width as length" <|
             \() ->
-                position Absolute |> Expect.equal "position: absolute;"
+                width Length 100 Px |> Expect.equal "width: 100px;"
 
-        , test "static position" <|
+        , test "width as percentage" <|
             \() ->
-                position Static |> Expect.equal "position: static;"
+                width Percent 50 |> Expect.equal "width: 50%;"
 
-        , test "fixed position" <|
+        , test "width as CSS keyword" <|
             \() ->
-                position Fixed |> Expect.equal "position: fixed;"
+                width Inherit |> Expect.equal "width: inherit;"
 
         ]
 

@@ -4,10 +4,10 @@ import Test exposing (..)
 import Expect
 import String
 
-import Properties.PositionTests
+import Properties.WidthTests
 
 
 all : Test
 all =
-    describe "A Test Suite"
-        [ Properties.PositionTests.all ]
+    describe "PureCSS Unit Tests"
+        [ Properties.WidthTests.all ]

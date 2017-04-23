@@ -1,25 +1,24 @@
 module PureCSS.CSS.Properties.Width exposing (..)
 
-import PureCSS.Property exposing (Property)
-import PureCSS.CSS.DataTypes.Numeric exposing (Length, Percentage)
-import PureCSS.CSS.DataTypes.distance exposing (LengthUnit)
-import PureCSS.CSS.DataTypes.Textual exposing (CSSKeyword, cssKeywordToString)
+import PureCSS.CSS.DataTypes.Distance exposing (LengthUnit)
+import PureCSS.CSS.DataTypes.Textual exposing (CSSKeyword)
+import String exposing (toLower)
 
 
 type WidthValue =
-    Length
-    | Percentage
+    Length LengthUnit
+    | Percent Int
     | CSSKeyword
 
 
 width : WidthValue -> String
 width widthValue =
     let
-        value = case value of
-            number LengthUnit ->
-                (toString number) ++ (LengthUnit |> toString |> toLower) ++ ";"
+        value = case widthValue of
+            Length number unit ->
+                (toString number) ++ (unit |> toString |> toLower) ++ ";"
 
-            number Pct ->
+            Percent number ->
                 (toString number) ++ "%;"
 
             CSSKeyword ->
