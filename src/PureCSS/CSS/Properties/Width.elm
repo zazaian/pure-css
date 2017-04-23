@@ -2,6 +2,7 @@ module PureCSS.CSS.Properties.Width exposing (..)
 
 import PureCSS.Property exposing (Property)
 import PureCSS.CSS.DataTypes.Numeric exposing (Length, Percentage)
+import PureCSS.CSS.DataTypes.distance exposing (LengthUnit)
 import PureCSS.CSS.DataTypes.Textual exposing (CSSKeyword, cssKeywordToString)
 
 
@@ -15,14 +16,16 @@ width : WidthValue -> String
 width widthValue =
     let
         value = case value of
-            Length ->
-                "length"
+            number LengthUnit ->
+                (toString number) ++ (LengthUnit |> toString |> toLower) ++ ";"
 
-            Percentage ->
-                "percentage"
+            number Pct ->
+                (toString number) ++ "%;"
 
             CSSKeyword ->
-                cssKeywordToString CSSKeyword
+                CSSKeyword
+                |> toString
+                |> toLower
 
     in
         "width: " ++ value ++ ";"
