@@ -29,3 +29,16 @@ write with this library adheres strictly to the CSS3 specification.
 This library was written and is currently being maintained by Mike Zazaian, a
 professional Elixir, Erlang, Elm, Javascript and Ruby programmer based in
 Detroit, Michigan, USA.
+
+
+## CSS Specification
+
+The CSS specification used for this library was taken from the following
+sources:
+
+Properties:
+https://www.w3.org/Style/CSS/all-properties.en.html
+
+Values:
+https://www.w3.org/TR/css3-values
+
