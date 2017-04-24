@@ -3,6 +3,11 @@ module Properties.WidthTests exposing (..)
 import Test exposing (..)
 import Expect
 import PureCSS.CSS.Properties.Width exposing (..)
+import PureCSS.CSS.DataTypes.Distance exposing
+    ( Distance(Length,Percent,Keyword)
+    , LengthUnit(Em,Ex,Ch,Rem,Vw,Vh,Vmin,Vmax,Cm,Mm,Q,In,Pc,Pt,Px)
+    )
+
 
 
 all : Test
