@@ -1,4 +1,9 @@
-module PureCSS.CSS.DataTypes.Textual exposing (..)
+module PureCSS.CSS.DataTypes.Textual exposing
+    (CSSKeyword(Initial,Inherit,Unset)
+    , URLPath
+    , URLModifier
+    , URLType(Absolute,Relative,Empty,Modified)
+    )
 
 {-
 Consult URL definition at:
