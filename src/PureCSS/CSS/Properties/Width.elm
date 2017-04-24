@@ -1,23 +1,13 @@
 module PureCSS.CSS.Properties.Width exposing (..)
 
 import String exposing (toLower)
-
-type LengthUnit =
-    Px
-
-type CSSKeyword =
-    Inherit
-
-type WidthValue =
-    Length Int LengthUnit
-    | Percent Int
-    | Keyword CSSKeyword
+import PureCSS.CSS.DataTypes.Distance exposing (..)
 
 
-width : WidthValue -> String
-width widthValue =
+width : Distance -> String
+width distance =
     let
-        value = case widthValue of
+        value = case distance of
             Length number unit ->
                 (toString number) ++ (unit |> toString |> toLower)
 

@@ -1,36 +1,28 @@
-module PureCSS.CSS.DataTypes.Distance exposing (..)
+module PureCSS.CSS.DataTypes.Distance exposing (.., Distance(..), LengthUnit(..))
 
 
-
-type LengthUnit number =
-    PhysicalUnit number
-    | VisualAngleUnit number
-    | FontRelativeUnit number
-    | ViewportPctUnit number
+import PureCSS.CSS.DataTypes.Textual exposing (CSSKeyword)
 
 
-type FontRelativeUnit number =
-    Em number
-    | Ex number
-    | Ch number
-    | Rem number
+type Distance =
+    Length Int LengthUnit
+    | Percent Int
+    | Keyword CSSKeyword
 
 
-type ViewportPctUnit number =
-    Vw number
-    | Vh number
-    | Vmin number
-    | Vmax number
-
-
-type PhysicalUnit number =
-    Cm number
-    | Mm number
-    | Q number
-    | In number
-    | Pc number
-    | Pt number
-
-
-type VisualAngleUnit number =
-    Px number
+type LengthUnit =
+    Em
+    | Ex
+    | Ch
+    | Rem
+    | Vw
+    | Vh
+    | Vmin
+    | Vmax
+    | Cm
+    | Mm
+    | Q
+    | In
+    | Pc
+    | Pt
+    | Px
