@@ -1,4 +1,6 @@
-module PureCSS.Properties.Position exposing (..)
+module PureCSS.Properties.Position exposing
+    ( PositionValue(..)
+    )
 
 import PureCSS.DataTypes.Textual exposing (CSSKeywords)
 
