@@ -16,6 +16,4 @@ type alias Property =
 
 prop : PropertyName -> String -> Property
 prop name val =
-    { name = name
-    , val = val
-    }
+    Property name val
