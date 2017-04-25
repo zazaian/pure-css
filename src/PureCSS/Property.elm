@@ -1,11 +1,13 @@
 module PureCSS.Property exposing (
-    PropertyName(Width)
-    , Property, prop
+    PropertyName(..)
+    , Property
+    , prop
     )
 
 
 type PropertyName =
-    Width
+    Height
+    | Width
 
 
 type alias Property =

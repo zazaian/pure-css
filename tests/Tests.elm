@@ -4,13 +4,15 @@ import Test exposing (..)
 import Expect
 import String
 
-import Properties.WidthTests
 import Tests.PropertyTests
+import Tests.Properties.HeightTests
+import Tests.Properties.WidthTests
 
 
 all : Test
 all =
     describe "PureCSS Unit Tests"
-        [ Properties.WidthTests.all
-        , Tests.PropertyTests.all
+        [ Tests.PropertyTests.all
+        , Tests.Properties.HeightTests.all
+        , Tests.Properties.WidthTests.all
         ]

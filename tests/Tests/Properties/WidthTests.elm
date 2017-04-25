@@ -1,4 +1,4 @@
-module Properties.WidthTests exposing (..)
+module Tests.Properties.WidthTests exposing (..)
 
 import Test exposing (..)
 import Expect
