@@ -1,4 +1,13 @@
-module PureCSS.DataTypes.Other exposing (..)
+module PureCSS.DataTypes.Other exposing
+    ( AngleUnit(..)
+    , Angle
+    , TimeUnit(..)
+    , Time
+    , FrequencyUnit(..)
+    , Frequency
+    , ResolutionUnit(..)
+    , Resolution
+    )
 
 type AngleUnit =
     Deg

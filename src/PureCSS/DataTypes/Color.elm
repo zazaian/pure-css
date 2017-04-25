@@ -1,4 +1,11 @@
-module PureCSS.DataTypes.Color exposing (..)
+module PureCSS.DataTypes.Color exposing
+    ( Color(..)
+    , TriColor
+    , QuadColor
+    , ColorKeyword(..)
+    , BasicColorKeyword(..)
+    , X11ColorKeyword(..)
+    )
 
 import PureCSS.DataTypes.Numeric exposing (Numeric)
 
@@ -23,7 +30,7 @@ type ColorKeyword =
      | X11ColorKeyword
 
 
-type BasicColorKeword =
+type BasicColorKeyword =
      Black
      | Silver
      | Gray
