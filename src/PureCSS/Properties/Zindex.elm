@@ -1,4 +1,4 @@
-module PureCSS.CSS.Properties.Zindex exposing (..)
+module PureCSS.Properties.Zindex exposing (..)
 
 type Values =
   Auto

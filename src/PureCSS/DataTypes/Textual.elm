@@ -1,4 +1,4 @@
-module PureCSS.CSS.DataTypes.Textual exposing
+module PureCSS.DataTypes.Textual exposing
     (CSSKeyword(Initial,Inherit,Unset)
     , URLPath
     , URLModifier
