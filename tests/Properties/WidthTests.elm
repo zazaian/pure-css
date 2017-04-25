@@ -10,6 +10,11 @@ import PureCSS.DataTypes.Distance exposing
 import PureCSS.DataTypes.Textual exposing
     (CSSKeyword(Initial,Inherit,Unset)
     )
+import PureCSS.Property exposing
+    (PropertyName(Width)
+    , Property
+    , prop
+    )
 
 
 
@@ -18,15 +23,15 @@ all =
     describe "width properties"
         [ test "width as length" <|
             \() ->
-                width (Length 100 Px) |> Expect.equal "width: 100px;"
+                width (Length 100 Px) |> Expect.equal { name = Width, val = "100px" }
 
         , test "width as percentage" <|
             \() ->
-                width (Percent 50) |> Expect.equal "width: 50%;"
+                width (Percent 50) |> Expect.equal { name = Width, val = "50%" }
 
         , test "width as CSS keyword" <|
             \() ->
-                width (Keyword Inherit) |> Expect.equal "width: inherit;"
+                width (Keyword Inherit) |> Expect.equal { name = Width, val = "inherit" }
 
         ]
 

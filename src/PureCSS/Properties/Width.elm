@@ -8,10 +8,14 @@ import PureCSS.DataTypes.Distance exposing
 import PureCSS.DataTypes.Textual exposing
     (CSSKeyword(Initial,Inherit,Unset)
     )
+import PureCSS.Property exposing
+    (PropertyName(Width)
+    , Property
+    , prop
+    )
 
 
-
-width : Distance -> String
+width : Distance -> Property
 width distance =
     let
         value = case distance of
@@ -27,4 +31,4 @@ width distance =
                 |> toLower
 
     in
-        "width: " ++ value ++ ";"
+        prop Width value
