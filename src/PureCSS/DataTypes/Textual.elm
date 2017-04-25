@@ -14,7 +14,8 @@ https://www.w3.org/TR/css3-values/#urls
 
 
 type CSSKeyword =
-   Initial
+   Auto
+   | Initial
    | Inherit
    | Unset
 

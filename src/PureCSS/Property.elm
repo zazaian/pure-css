@@ -8,6 +8,10 @@ module PureCSS.Property exposing (
 type PropertyName =
     Height
     | Width
+    | Top
+    | Right
+    | Bottom
+    | Left
 
 
 type alias Property =
