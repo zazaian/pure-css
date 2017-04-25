@@ -2,11 +2,11 @@ module PureCSS.Properties.Width exposing (..)
 
 import String exposing (toLower)
 import PureCSS.DataTypes.Distance exposing
-    ( Distance(Length,Percent,Keyword)
-    , LengthUnit(Em,Ex,Ch,Rem,Vw,Vh,Vmin,Vmax,Cm,Mm,Q,In,Pc,Pt,Px)
+    ( Distance(..)
+    , LengthUnit(..)
     )
 import PureCSS.DataTypes.Textual exposing
-    (CSSKeyword(Initial,Inherit,Unset)
+    (CSSKeyword(..)
     )
 import PureCSS.Property exposing
     (PropertyName(Width)
