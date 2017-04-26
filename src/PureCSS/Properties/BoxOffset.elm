@@ -13,3 +13,19 @@ import PureCSS.Property exposing
 top : Distance -> Property
 top distance =
     prop Top (Distance.toString distance)
+
+
+right : Distance -> Property
+right distance =
+    prop Right (Distance.toString distance)
+
+
+
+bottom : Distance -> Property
+bottom distance =
+    prop Bottom (Distance.toString distance)
+
+
+left : Distance -> Property
+left distance =
+    prop Left (Distance.toString distance)
