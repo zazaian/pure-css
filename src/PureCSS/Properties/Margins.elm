@@ -27,3 +27,18 @@ marginBottom distance =
 marginLeft : Distance -> Property
 marginLeft distance =
     prop MarginLeft (Distance.toString distance)
+
+
+margin1 : Distance -> Property
+margin1 distance =
+    prop Margin (Distance.toString distance)
+
+
+margin2 : (Distance, Distance) -> Property 
+margin2 (distance1, distance2) =
+    let
+        value = (Distance.toString distance1)
+            ++ " "
+            ++ (Distance.toString distance2)
+    in
+        prop Margin value
