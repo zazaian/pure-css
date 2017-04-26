@@ -3,7 +3,12 @@ module PureCSS.Properties.Margins exposing (..)
 import PureCSS.DataTypes.Distance as Distance
 import PureCSS.DataTypes.Distance exposing (Distance)
 import PureCSS.Property exposing
-    (PropertyName(MarginTop, MarginRight, MarginBottom, MarginLeft)
+    ( PropertyName
+        ( MarginTop,
+        , MarginRight
+        , MarginBottom
+        , MarginLeft
+        )
     , Property
     , prop
     )
