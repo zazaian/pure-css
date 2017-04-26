@@ -19,7 +19,6 @@ marginRight distance =
     prop MarginRight (Distance.toString distance)
 
 
-
 marginBottom : Distance -> Property
 marginBottom distance =
     prop MarginBottom (Distance.toString distance)
