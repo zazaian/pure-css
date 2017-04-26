@@ -1,28 +1,19 @@
 module PureCSS.Element exposing (..)
 
+import PureCSS.Property exposing (Property)
 
-elem : Selector -> Properties -> Children -> Element
+elem : String -> List Property -> List (Maybe Element) -> Element
 elem selector properties children =
-    { selector = selector
-    , properties = properties
-    , children = children
-    }
+    Element
+        { selector = selector
+        , properties = properties
+        , children = children
+        }
 
 
-type alias Selector
-    = String
-
-
-type alias Properties
-    = List Property
-
-
-type alias Children
-    = List Element
-
-
-type alias Element =
-    { selector = Selector
-    , properties = Properties
-    , children = Children
-    }
+type Element
+    = Element
+        { selector : String
+        , properties : List Property
+        , children : List (Maybe Element)
+        }

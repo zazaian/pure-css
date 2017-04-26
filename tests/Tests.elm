@@ -9,6 +9,7 @@ import Tests.Properties.HeightTests
 import Tests.Properties.WidthTests
 import Tests.Properties.BoxOffsetTests
 import Tests.Properties.MarginTests
+import Tests.ElementTests
 
 
 all : Test
@@ -19,4 +20,5 @@ all =
         , Tests.Properties.WidthTests.all
         , Tests.Properties.BoxOffsetTests.all
         , Tests.Properties.MarginTests.all
+        , Tests.ElementTests.all
         ]
