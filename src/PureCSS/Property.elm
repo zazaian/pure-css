@@ -12,6 +12,10 @@ type PropertyName =
     | Right
     | Bottom
     | Left
+    | MarginTop
+    | MarginRight
+    | MarginBottom
+    | MarginLeft
 
 
 type alias Property =
