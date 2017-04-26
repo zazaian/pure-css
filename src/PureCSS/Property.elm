@@ -4,8 +4,6 @@ module PureCSS.Property exposing (
     , prop
     )
 
-import PureCSS.DataType exposing (DataType)
-
 
 type PropertyName =
     Height
@@ -22,10 +20,10 @@ type PropertyName =
 
 type alias Property =
     { name : PropertyName
-    , val : DataType
+    , val : String
     }
 
 
-prop : PropertyName -> DataType -> Property
+prop : PropertyName -> String -> Property
 prop name val =
     Property name val
