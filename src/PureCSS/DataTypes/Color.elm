@@ -7,7 +7,6 @@ module PureCSS.DataTypes.Color exposing
     , X11ColorKeyword(..)
     )
 
-import PureCSS.DataTypes.Numeric exposing (Numeric)
 
 type Color =
     ColorKeyword
@@ -15,6 +14,10 @@ type Color =
     | RGBA QuadColor
     | HSL TriColor
     | HSLA QuadColor
+
+
+type alias Numeric =
+    Int
 
 
 type alias TriColor =
@@ -56,7 +59,6 @@ type X11ColorKeyword =
     | Azure
     | Beige
     | Bisque
-    | Black
     | BlanchedAlmond
     | BlueViolet
     | Brown

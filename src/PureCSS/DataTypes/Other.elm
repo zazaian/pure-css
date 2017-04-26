@@ -16,8 +16,8 @@ type AngleUnit =
     | Turn
 
 
-type Angle =
-    number Maybe AngleUnit
+type alias Angle =
+    Int Maybe AngleUnit
 
 
 type TimeUnit =
@@ -25,8 +25,8 @@ type TimeUnit =
     | Ms
 
 
-type Time =
-    number Maybe TimeUnit
+type alias Time =
+    Int Maybe TimeUnit
 
 
 type FrequencyUnit =
@@ -34,8 +34,8 @@ type FrequencyUnit =
     | Khz
 
 
-type Frequency =
-    number Maybe FrequencyUnit
+type alias Frequency =
+    Int Maybe FrequencyUnit
 
 
 type ResolutionUnit =
@@ -44,5 +44,5 @@ type ResolutionUnit =
     | Dppx
 
 
-type Resolution =
-    number Maybe ResolutionUnit
+type alias Resolution =
+    Int Maybe ResolutionUnit

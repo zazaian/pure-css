@@ -36,6 +36,9 @@ type LengthUnit =
 toString: Distance -> String
 toString distance =
     case distance of
+        Zero ->
+            "0"
+
         Length number unit ->
             (Basics.toString number) ++ (unit |> Basics.toString |> toLower)
 
