@@ -12,6 +12,7 @@ type Distance =
     Length Int LengthUnit
     | Percent Int
     | Keyword CSSKeyword
+    | Zero
 
 
 type LengthUnit =
