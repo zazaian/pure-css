@@ -38,7 +38,13 @@ all =
                             ( Element
                                 { selector = "div#container"
                                 , properties = [ widthProp ]
-                                , children = [ child ]
+                                , children =
+                                    [ Element
+                                        { selector = ".waffles"
+                                        , properties = [ widthProp ]
+                                        , children = []
+                                        }
+                                    ]
                                 }
                             )
         ]
