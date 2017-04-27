@@ -25,6 +25,6 @@ all =
 
         , test "convert a Property to CSS" <|
             \() ->
-                toCSS (Property Width "100px") |> Expect.equal "width: 100px;\n"
+                toCSS (Property Width "100px") |> Expect.equal "width: 100px;"
         ]
 
