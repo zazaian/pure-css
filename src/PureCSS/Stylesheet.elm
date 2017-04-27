@@ -1,28 +1,20 @@
 module PureCSS.Stylesheet exposing (..)
 
 
-stylesheet : Elements -> Namespace -> Mixins -> Stylesheet
+type alias Namespace =
+    { name : String }
+
+
+type alias Stylesheet =
+    { elements = List Element
+    , namespace = Namespace
+    , mixins = List String
+    }
+
+
+stylesheet : List Element -> Namespace -> List String -> Stylesheet
 stylesheet elements namespace mixins =
     { elements = elements
     , namespace = namespace
     , mixins = mixins
-    }
-
-
-type Elements =
-    List Element
-
-
-type Namespace =
-    String
-    | Nothing
-
-type Mixins =
-    List Mixin
-
-
-type alias Stylesheet =
-    { elements = Elements
-    , namespace = Namespace
-    , mixins = Mixins
     }
