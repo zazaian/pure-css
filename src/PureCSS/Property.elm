@@ -2,7 +2,10 @@ module PureCSS.Property exposing (
     PropertyName(..)
     , Property
     , prop
+    , toCSS
     )
+
+import String exposing (toLower)
 
 
 type PropertyName =
@@ -32,7 +35,7 @@ prop name val =
 
 toCSS : Property -> String
 toCSS property =
-   toString property.name
+   toLower (toString property.name)
    ++ ": "
    ++ property.val
    ++ ";\n"
