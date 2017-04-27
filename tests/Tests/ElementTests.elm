@@ -26,4 +26,19 @@ all =
                                 , children = []
                                 }
                             )
+
+        , test "nested elements" <|
+            \() ->
+                let
+                    widthProp = prop Width "100px"
+                    child = elem ".waffles" [ widthProp ] []
+                in
+                    elem "div#container" [ widthProp ] [ child ]
+                        |> Expect.equal
+                            ( Element
+                                { selector = "div#container"
+                                , properties = [ widthProp ]
+                                , children = [ child ]
+                                }
+                            )
         ]
