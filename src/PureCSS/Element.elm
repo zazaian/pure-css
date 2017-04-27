@@ -2,7 +2,7 @@ module PureCSS.Element exposing (..)
 
 import PureCSS.Property exposing (Property)
 
-elem : String -> List Property -> List (Maybe Element) -> Element
+elem : String -> List Property -> List Element -> Element
 elem selector properties children =
     Element
         { selector = selector
@@ -15,5 +15,5 @@ type Element
     = Element
         { selector : String
         , properties : List Property
-        , children : List (Maybe Element)
+        , children : List Element
         }

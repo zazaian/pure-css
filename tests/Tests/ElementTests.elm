@@ -18,12 +18,12 @@ all =
                 let
                     widthProp = prop Width "100px"
                 in
-                    elem "div#container" [ widthProp ] [ Nothing ]
+                    elem "div#container" [ widthProp ] []
                         |> Expect.equal
                             ( Element
                                 { selector = "div#container"
                                 , properties = [ widthProp ]
-                                , children = [ Nothing ]
+                                , children = []
                                 }
                             )
         ]
