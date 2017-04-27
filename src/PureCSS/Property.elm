@@ -28,3 +28,11 @@ type alias Property =
 prop : PropertyName -> String -> Property
 prop name val =
     Property name val
+
+
+toCSS : Property -> String
+toCSS property =
+   toString property.name
+   ++ ": "
+   ++ property.val
+   ++ ";\n"
