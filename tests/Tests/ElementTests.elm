@@ -20,9 +20,10 @@ all =
                 in
                     elem "div#container" [ widthProp ] [ Nothing ]
                         |> Expect.equal
-                            Element
+                            ( Element
                                 { selector = "div#container"
                                 , properties = [ widthProp ]
                                 , children = [ Nothing ]
                                 }
+                            )
         ]
