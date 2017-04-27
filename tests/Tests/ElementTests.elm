@@ -47,4 +47,17 @@ all =
                                     ]
                                 }
                             )
+        , test "convert Element to CSS" <|
+            \() ->
+                let
+                    widthProp = prop Width "100px"
+                    elem = elem "div#container" [ widthProp ] []
+                in
+                        |> Expect.equal
+                            """
+                            div#container {
+                              width: 100px;
+                            }
+                            """
+
         ]

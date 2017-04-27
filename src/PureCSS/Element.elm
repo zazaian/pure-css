@@ -3,6 +3,7 @@ module PureCSS.Element exposing (..)
 import PureCSS.Property as Property
 import PureCSS.Property exposing (Property)
 import String as String
+import String exposing (map)
 
 elem : String -> List Property -> List Element -> Element
 elem selector properties children =
@@ -30,4 +31,4 @@ toCSS element =
         element.selector
         ++ " {\n  "
         ++ finalProps
-        ++ "}"
+        ++ "\n}"
