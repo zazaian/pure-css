@@ -11,6 +11,7 @@ import Tests.Properties.BoxOffsetTests
 import Tests.Properties.MarginTests
 import Tests.ElementTests
 import Tests.StylesheetTests
+import Tests.DataTypes.DistanceTests
 
 
 all : Test
@@ -23,4 +24,5 @@ all =
         , Tests.Properties.MarginTests.all
         , Tests.ElementTests.all
         , Tests.StylesheetTests.all
+        , Tests.DataTypes.DistanceTests.all
         ]

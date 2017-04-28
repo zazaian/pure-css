@@ -3,8 +3,9 @@ module PureCSS.DataTypes.Distance exposing
     , LengthUnit(..)
     , toString
     , em
+    , ex
     , ch
-    , rem
+    , relEm
     , vw
     , vh
     , vmin
@@ -12,7 +13,7 @@ module PureCSS.DataTypes.Distance exposing
     , cm
     , mm
     , q
-    , inches
+    , inch
     , pc
     , pt
     , px
@@ -90,8 +91,8 @@ ch number =
     Length number Ch
 
 
-rem : Float -> Distance
-rem number =
+relEm : Float -> Distance
+relEm number =
     Length number Rem
 
 
@@ -130,8 +131,8 @@ q number =
     Length number Q
 
 
-inches : Float -> Distance
-inches number =
+inch : Float -> Distance
+inch number =
     Length number In
 
 
