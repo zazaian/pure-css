@@ -20,7 +20,7 @@ module PureCSS.DataTypes.Distance exposing
     , px
     )
 
-import PureCSS.DataTypes.Textual exposing (CSSKeyword)
+import PureCSS.DataTypes.Keyword exposing (CSSKeyword)
 import String exposing (toLower)
 
 

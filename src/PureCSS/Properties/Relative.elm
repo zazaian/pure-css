@@ -1,6 +1,6 @@
 module PureCSS.Properties.Relative exposing (..)
 
-module PureCSS.DataTypes.Textual exposing (CSSKeyword)
+module PureCSS.DataTypes.Keyword exposing (CSSKeyword)
 
 
 

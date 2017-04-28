@@ -9,7 +9,7 @@ import PureCSS.DataTypes.Distance exposing
     , px
     , pct
     )
-import PureCSS.DataTypes.Textual exposing (CSSKeyword(..))
+import PureCSS.DataTypes.Keyword exposing (CSSKeyword(..))
 import PureCSS.Property exposing
     (PropertyName(Width)
     , Property

@@ -2,7 +2,7 @@ module PureCSS.Properties.Position exposing
     ( PositionValue(..)
     )
 
-import PureCSS.DataTypes.Textual exposing (CSSKeywords)
+import PureCSS.DataTypes.Keyword exposing (CSSKeyword)
 
 
 

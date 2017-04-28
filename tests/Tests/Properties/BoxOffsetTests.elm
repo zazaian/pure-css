@@ -7,7 +7,7 @@ import PureCSS.DataTypes.Distance exposing
     ( Distance(..)
     , LengthUnit(..)
     )
-import PureCSS.DataTypes.Textual exposing (CSSKeyword(..))
+import PureCSS.DataTypes.Keyword exposing (CSSKeyword(..))
 import PureCSS.Property exposing
     (PropertyName(Top,Right,Bottom,Left)
     )

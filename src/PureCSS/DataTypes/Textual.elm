@@ -1,6 +1,5 @@
 module PureCSS.DataTypes.Textual exposing
-    (CSSKeyword(..)
-    , URLPath
+    ( URLPath
     , URLModifier
     , URLType(..)
     )
@@ -9,15 +8,6 @@ module PureCSS.DataTypes.Textual exposing
 Consult URL definition at:
 https://www.w3.org/TR/css3-values/#urls
 -}
-
--- CSS-Wide Keywords
-
-
-type CSSKeyword =
-   Auto
-   | Initial
-   | Inherit
-   | Unset
 
 
 type alias URLPath =
