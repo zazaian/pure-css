@@ -12,7 +12,7 @@ module PureCSS.DataTypes.Distance exposing
     , cm
     , mm
     , q
-    , in
+    , inches
     , pc
     , pt
     , px
@@ -65,81 +65,81 @@ toString distance =
             |> toLower
 
 
-pct : Float -> Percent
+pct : Float -> Distance
 pct number =
     Percent number
 
 
-px : Float -> Length
+px : Float -> Distance
 px number =
     Length number Px
 
 
-em : Float -> Length
+em : Float -> Distance
 em number =
     Length number Em
 
 
-ex : Float -> Length
+ex : Float -> Distance
 ex number =
     Length number Ex
 
 
-ch : Float -> Length
+ch : Float -> Distance
 ch number =
     Length number Ch
 
 
-rem : Float -> Length
+rem : Float -> Distance
 rem number =
     Length number Rem
 
 
-vw : Float -> Length
+vw : Float -> Distance
 vw number =
     Length number Vw
 
 
-vh : Float -> Length
+vh : Float -> Distance
 vh number =
     Length number Vh
 
 
-vmin : Float -> Length
+vmin : Float -> Distance
 vmin number =
     Length number Vmin
 
 
-vmax : Float -> Length
+vmax : Float -> Distance
 vmax number =
     Length number Vmax
 
 
-cm : Float -> Length
+cm : Float -> Distance
 cm number =
     Length number Cm
 
 
-mm : Float -> Length
+mm : Float -> Distance
 mm number =
     Length number Mm
 
 
-q : Float -> Length
+q : Float -> Distance
 q number =
     Length number Q
 
 
-in : Float -> Length
-in number =
+inches : Float -> Distance
+inches number =
     Length number In
 
 
-pc : Float -> Length
+pc : Float -> Distance
 pc number =
     Length number Pc
 
 
-pt : Float -> Length
+pt : Float -> Distance
 pt number =
     Length number Pt
