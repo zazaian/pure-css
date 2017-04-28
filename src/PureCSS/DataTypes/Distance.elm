@@ -9,8 +9,8 @@ import String exposing (toLower)
 
 
 type Distance =
-    Length Int LengthUnit
-    | Percent Int
+    Length Float LengthUnit
+    | Percent Float
     | Keyword CSSKeyword
     | Zero
 
