@@ -2,6 +2,7 @@ module PureCSS.DataTypes.Distance exposing
     ( Distance(..)
     , LengthUnit(..)
     , toString
+    , pct
     , em
     , ex
     , ch
