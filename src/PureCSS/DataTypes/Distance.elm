@@ -2,6 +2,20 @@ module PureCSS.DataTypes.Distance exposing
     ( Distance(..)
     , LengthUnit(..)
     , toString
+    , em
+    , ch
+    , rem
+    , vw
+    , vh
+    , vmin
+    , vmax
+    , cm
+    , mm
+    , q
+    , in
+    , pc
+    , pt
+    , px
     )
 
 import PureCSS.DataTypes.Textual exposing (CSSKeyword)
@@ -33,7 +47,7 @@ type LengthUnit =
     | Px
 
 
-toString: Distance -> String
+toString : Distance -> String
 toString distance =
     case distance of
         Zero ->
@@ -49,3 +63,83 @@ toString distance =
             keyword
             |> Basics.toString
             |> toLower
+
+
+pct : Float -> Percent
+pct number =
+    Percent number
+
+
+px : Float -> Length
+px number =
+    Length number Px
+
+
+em : Float -> Length
+em number =
+    Length number Em
+
+
+ex : Float -> Length
+ex number =
+    Length number Ex
+
+
+ch : Float -> Length
+ch number =
+    Length number Ch
+
+
+rem : Float -> Length
+rem number =
+    Length number Rem
+
+
+vw : Float -> Length
+vw number =
+    Length number Vw
+
+
+vh : Float -> Length
+vh number =
+    Length number Vh
+
+
+vmin : Float -> Length
+vmin number =
+    Length number Vmin
+
+
+vmax : Float -> Length
+vmax number =
+    Length number Vmax
+
+
+cm : Float -> Length
+cm number =
+    Length number Cm
+
+
+mm : Float -> Length
+mm number =
+    Length number Mm
+
+
+q : Float -> Length
+q number =
+    Length number Q
+
+
+in : Float -> Length
+in number =
+    Length number In
+
+
+pc : Float -> Length
+pc number =
+    Length number Pc
+
+
+pt : Float -> Length
+pt number =
+    Length number Pt
