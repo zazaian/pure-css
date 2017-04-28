@@ -3,6 +3,8 @@ module Tests.ElementTests exposing (..)
 import Test exposing (..)
 import Expect
 import PureCSS.Element exposing (..)
+import PureCSS.Element exposing (Element)
+import PureCSS.Element as Element
 import PureCSS.Property exposing
     ( Property
     , PropertyName ( Width )
@@ -51,13 +53,10 @@ all =
             \() ->
                 let
                     widthProp = prop Width "100px"
-                    elem = elem "div#container" [ widthProp ] []
+                    element = elem "div#container" [ widthProp ] []
                 in
+                    Element.toCSS element
                         |> Expect.equal
-                            """
-                            div#container {
-                              width: 100px;
-                            }
-                            """
+                          "div#container {\n  width: 100px;\n}"
 
         ]

@@ -38,4 +38,4 @@ toCSS property =
    toLower (toString property.name)
    ++ ": "
    ++ property.val
-   ++ ";\n"
+   ++ ";"

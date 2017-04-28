@@ -2,8 +2,8 @@ module PureCSS.Element exposing (..)
 
 import PureCSS.Property as Property
 import PureCSS.Property exposing (Property)
-import String as String
-import String exposing (map)
+import String
+import List
 
 elem : String -> List Property -> List Element -> Element
 elem selector properties children =
@@ -23,9 +23,10 @@ type Element
 
 
 toCSS : Element -> String
-toCSS element =
+toCSS (Element element) =
     let
-        propStrs = map Property.toCSS element.properties
+
+        propStrs = List.map Property.toCSS (element.properties)
         finalProps = String.join "\n  " propStrs
     in
         element.selector
