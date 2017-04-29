@@ -1,6 +1,8 @@
 module PureCSS.Values exposing (..)
 
-import PureCSS.DataTypes.Distance exposing (Distance)
+import PureCSS.DataTypes.Distance exposing
+    ( Distance (Keyword)
+    )
 import PureCSS.DataTypes.Keyword exposing
     ( CSSKeyword (..)
     )
