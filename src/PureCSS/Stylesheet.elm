@@ -1,6 +1,7 @@
 module PureCSS.Stylesheet exposing (..)
 
 import PureCSS.Element exposing (Element)
+import PureCSS.Element as Element
 
 
 type alias Stylesheet =
@@ -18,4 +19,11 @@ stylesheet namespace mixins elements =
     }
 
 
+toCSS : Stylesheet -> String
+toCSS stylesheet =
+    let
 
+        elemStrs = List.map Element.toCSS (stylesheet.elements)
+        finalElems = String.join "\n\n" elemStrs
+    in
+        finalElems
