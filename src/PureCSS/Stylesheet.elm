@@ -6,16 +6,12 @@ import PureCSS.Element as Element
 
 type alias Stylesheet =
     { elements : List Element
-    , namespace : String
-    , mixins : List String
     }
 
 
-stylesheet : String -> List String -> List Element -> Stylesheet
-stylesheet namespace mixins elements =
+stylesheet : List Element -> Stylesheet
+stylesheet elements =
     { elements = elements
-    , namespace = namespace
-    , mixins = mixins
     }
 
 

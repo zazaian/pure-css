@@ -21,11 +21,9 @@ all =
                     widthProp = prop Width "100px"
                     element = elem "div#container" [ widthProp ] []
                 in
-                    stylesheet "main" [] [ element ]
+                    stylesheet [ element ]
                         |> Expect.equal
-                            { namespace = "main"
-                            , mixins = []
-                            , elements = [ element ]
+                            { elements = [ element ]
                             }
 
         , test "stylesheet to CSS" <|
@@ -34,7 +32,7 @@ all =
                     widthProp = prop Width "100px"
                     element1 = elem "div#container" [ widthProp ] []
                     element2 = elem "class.column" [ widthProp ] []
-                    sheet = stylesheet "main" [] [ element1, element2 ]
+                    sheet = stylesheet [ element1, element2 ]
                 in
                     (Stylesheet.toCSS sheet)
                         |> Expect.equal
